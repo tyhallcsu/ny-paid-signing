@@ -1,0 +1,6 @@
+Flask==3.0.3
+flask-discord==0.1.69
+redis==5.0.7
+python-dotenv==1.0.1
+discord.py==2.4.0
+git+https://github.com/nythepegasus/PyDunk.git

@@ -1,0 +1,13 @@
+[Unit]
+Description=Ny Paid Signing Worker
+After=network.target
+
+[Service]
+User=ny
+WorkingDirectory=/opt/ny-paid-signing-fixed
+Environment="PATH=/opt/ny-paid-signing-fixed/.venv/bin"
+ExecStart=/opt/ny-paid-signing-fixed/.venv/bin/python worker/worker.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
