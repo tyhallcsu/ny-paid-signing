@@ -46,7 +46,7 @@ def run_real():
             exists = any(getattr(d, "device_number", None) == udid for d in team.devices)
             if not exists:
                 print(f"[WORKER] Adding {name} / {udid} to Apple developer portal...")
-                                add_device_to_apple(team, udid=udid, name=name)
+                add_device_to_apple(team, udid=udid, name=name)
 
             mark_registered(udid)
             print(f"[WORKER] Marked registered: {udid}")
